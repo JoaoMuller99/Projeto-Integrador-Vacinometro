@@ -20,4 +20,123 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
+  background-image: url("/linha_fundo.svg"), linear-gradient(115.55deg, #ffffff -10.76%, #c7e8f9 45.17%, #83cdf1 112.21%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0% -45%;
+  backdrop-filter: blur(25px);
+  position: relative;
+}
+
+main > header {
+  position: absolute;
+  top: 60px;
+  left: 80px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+main > header > h1 {
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 36px;
+  letter-spacing: -0.05em;
+  color: #83cdf1;
+}
+
+main > div {
+  background: #ffffff;
+  box-shadow: 20px 20px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  width: 714px;
+  height: 160px;
+  max-width: 90%;
+  padding: 30px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+main > div > div:not(.dots) {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+main > div > .dots {
+  display: flex;
+  gap: 5px;
+  position: absolute;
+  top: 20px;
+  left: 30px;
+}
+
+main > div > .dots > span {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+main > div > .dots > span:first-child {
+  background-color: #ff5f57;
+}
+
+main > div > .dots > span:nth-child(2) {
+  background-color: #ffcf1a;
+}
+
+main > div > .dots > span:last-child {
+  background-color: #46d755;
+}
+
+main > div > div > div {
+  width: 100%;
+  position: relative;
+}
+
+main > div > div > div > svg {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+}
+
+main > div > div > div > select {
+  width: 100%;
+  background: #ffffff;
+  box-shadow: inset 0px 0px 10px 1px rgba(131, 205, 241, 0.8);
+  border-radius: 8px;
+  border: 0;
+  min-height: 50px;
+  padding: 0rem 3.8125rem;
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  cursor: pointer;
+}
+
+main > div > div > div > select > option {
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 24px;
+  letter-spacing: -0.05em;
+  color: #262626;
+}
+
+main > div > div > button {
+  min-width: 120px;
+  height: 50px;
+  background: #3137ca;
+  border-radius: 8px;
+  border: 0;
+  color: white;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 24px;
+  letter-spacing: -0.05em;
+  cursor: pointer;
 }
