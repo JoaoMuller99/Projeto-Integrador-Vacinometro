@@ -1,5 +1,6 @@
 import Head from "next/head";
 import { useEffect, useState } from "react";
+import InfosVacinas from "../components/infos_vacinas";
 // Components
 import Logo from "../components/logo";
 import SelectCidade from "../components/select_cidade";
@@ -60,12 +61,13 @@ export default function Home() {
           <span></span>
           <span></span>
         </div>
-        <div>
+        <div className="select-main-container">
           <SelectCidade cidades={cidades} setCidadeSelecionada={setCidadeSelecionada} />
           <button onClick={handleOnClick} type="button">
             Buscar
           </button>
         </div>
+        {data && cidadeSelecionada && <InfosVacinas data={data} cidadeSelecionada={cidadeSelecionada} />}
       </div>
     </main>
   );
